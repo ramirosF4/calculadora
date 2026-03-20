@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/bootstrap.min.css">
+    <title>VENTANA DE PERMISOS</title>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow" style="width: 400px; border-radius: 15px; border: 1px solid;">
+        
+        <form>
+            <h1 class="text-center mb-3">Permisos</h1>
+            <div class="mb-3">
+                <label class="form-label text-black">Ingresa el número de permisos:</label>
+                <input type="text" id="permisoTotal" class="form-control" placeholder="PERMISOS">
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-black">Permiso usuario:</label>
+                <select class="form-select permiso" required>
+                    <option value="0">Ninguno</option>
+                    <option value="1">Lectura</option>
+                    <option value="2">Ejecución</option>
+                    <option value="4">Escritura</option>
+                    <option value="7">Todos</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-black">Permiso grupo:</label>
+                <select class="form-select permiso" required>
+                    <option value="0">Ninguno</option>
+                    <option value="1">Lectura</option>
+                    <option value="2">Ejecución</option>
+                    <option value="4">Escritura</option>
+                    <option value="7">Todos</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-black">Permiso otros:</label>
+                <select class="form-select permiso" required>
+                    <option value="0">Ninguno</option>
+                    <option value="1">Lectura</option>
+                    <option value="2">Ejecución</option>
+                    <option value="4">Escritura</option>
+                    <option value="7">Todos</option>
+                </select>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button type="reset" class="btn btn-danger">Limpiar</button>
+           <!--      <button type="submit" class="btn btn-success">Cargar</button> -->
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<script src="public/bootstrap.bundle.min.js"></script>
+<script src="public/js/permisos.js"></script>
+
+</body>
+</html>
